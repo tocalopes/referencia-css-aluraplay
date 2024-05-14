@@ -7,3 +7,4 @@ flex-wrap: wrap => Quebra os elementos de um flexbox em linhas ou colunas, depen
 flex-flow: column wrap => combina flex direction e flex wrap no mesmo contexto
 .menu__lista:nth-child(2) => /* NTH CHILD É USADO PARA pegar os elementos de acordo com a ordem em que aparecem */
 align-self: center; => alinha um item especifico dentro de um flexbox
+order: 1 => Ela não é indicada para leitores, mas troca a ordem dos elementos dentro de um flexbox
