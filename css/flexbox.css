@@ -62,8 +62,11 @@
     height: 100%;
 }
 
-.menu__lista  li {
+.menu__lista  li a{
     align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
 }
 
 /* NTH CHILD É USADO PARA pegar os elementos de acordo com a ordem em que aparecem */
