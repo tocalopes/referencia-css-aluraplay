@@ -12,6 +12,28 @@
     display: none;
 }
 
+
+/* SECAO SUPERIOR */
+
+.superior__secao__container{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: scroll;
+    gap: 15px;
+    /* propriedade white space é utilizada para texto, nunca utilizar flexbox para trabalhar com textos */
+}
+
+/* RODAPE */
+
+.rodape__container{
+    display: flex;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+    flex-flow: column wrap;
+}
+
+
 @media (min-width: 834px){
     /* CABECALHO */
 
@@ -26,11 +48,27 @@
     
 }
 
-/* RODAPE */
+/* MENU */
+.menu__container{
+    position: fixed;
+    bottom: 0%;
+    height: 74px;
+    width: 100%;
+}
 
-.rodape__container{
+.menu__lista{
     display: flex;
-    /* flex-direction: column;
-    flex-wrap: wrap; */
-    flex-flow: column wrap;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.menu__lista  li {
+    align-self: center;
+}
+
+/* NTH CHILD É USADO PARA pegar os elementos de acordo com a ordem em que aparecem */
+.menu__lista:nth-child(2),
+.menu__lista:nth-child(3),
+.menu__lista:nth-child(4) {
+    display: none;
 }

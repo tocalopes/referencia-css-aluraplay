@@ -1,0 +1,9 @@
+ white-space: nowrap => Dessa forma, não existe quebra de linha dentro do elemento
+overflow: scroll => Quando passar da tela, coloca um scroll
+gap: 15px; => Propriedade do flexbox, difini o espaço entre os itens (não aplica nas extremidades)
+
+flex-direction: column;
+flex-wrap: wrap => Quebra os elementos de um flexbox em linhas ou colunas, dependendo do espaço disponivel
+flex-flow: column wrap => combina flex direction e flex wrap no mesmo contexto
+.menu__lista:nth-child(2) => /* NTH CHILD É USADO PARA pegar os elementos de acordo com a ordem em que aparecem */
+align-self: center; => alinha um item especifico dentro de um flexbox
